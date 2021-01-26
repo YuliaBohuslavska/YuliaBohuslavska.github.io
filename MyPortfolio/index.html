@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <img id="menu-pic" src="menu.png" alt="menu">
+        <ul id="menu" type="none">
+            <li class="header-links"><a href="#about">About me</a></li>
+            <li class="header-links"><a href="#portfolio">Portfolio</a></li>
+            <li class="header-links"><a href="#contacts">Contacts</a></li>
+            <li class="header-links"><a href="#">Home</a></li>
+        </ul>
+    </nav>
+    <h1 id="name">Yulia Bohuslavska,<br> Front-end developer</h1>
+    <div id="down"><a href="#about"><img alt="down" src="dow.png"></a></div>
+</header>
+<div class="content">
+<section id="about">
+    <div class="pics">
+        <img src="me1.jpg" alt="me">
+    </div>
+    <div class="text">
+        <h2>About me</h2>
+        <p>I study at the Kharkov airspace university and I dream to get a job of a junior front-end developer.</p>
+        <p>But for me programming is not just job, it's a hobby because it always develops me.</p>
+        <p>I like develop web-pages and do them interactive.</p>
+        <p><b>Skills: </b>HTML, CSS, JS, React</p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+        <div class="project">
+            <img src="My_goals.gif" alt="flashcards">
+            <div class="about-project">
+                <h3>Flashcards</h3>
+                <button class="butt" id="show-modal-1">Open</button>
+            </div>
+            <div class="modal" id="modal1">
+                <h1>Flashcards</h1>
+                <p>You can see the project at the following link: <a href="MyFlashcards/index.html">flashcards</a> </p>
+                <p>This is a web page with flip-down flash cards. Some HTML basics and CSS helped me to create a beautiful design.</p>
+                <button class="butt modal-close">Close</button>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="Virtual_Piano.gif" alt="virtual piano">
+            <div class="about-project">
+                <h3>Virtual Piano</h3>
+                <button class="butt" id="show-modal-2">Open</button>
+            </div>
+            <div class="modal" id="modal2">
+                <h1>Virtual Piano</h1>
+                <p>You can see the project at the following link: <a href="MyPiano/index.html">virtual piano</a> </p>
+                <p>This is a web page with little virtual piano. Here I used basics of JavaScript to create sounds for piano.</p>
+                <button class="butt modal-close">Close</button>
+            </div>
+        </div>
+        <div class="overlay" id="overlay-modal"></div>
+    </div>
+</section>
+</div>
+<section id="contacts">
+    <p>My contacts:</p>
+    <a href="https://t.me/Yulyashka_2" target="_blank"><img class="icon" src="tg.png" alt="Telegram"></a>
+    <a href="https://www.instagram.com/bohuslavska23" target="_blank"><img class="icon" src="https://img.icons8.com/color/2x/instagram-new--v1.png" alt="Instagram"></a>
+    <a href="mailto:bohuslavska23@gmail.com" target="_blank"><img class="icon" src="gmail.png" alt="Gmail"></a>
+</section>
+
+<footer>
+    <p>Bohuslavska Yulia, 2021</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
