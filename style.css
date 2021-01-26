@@ -1,0 +1,282 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    background: url("https://avatanplus.com/files/resources/original/5784fea7c25f7155df82bf74.jpg");
+    background-size: cover;
+}
+header {
+    background: url("https://cdnimg.rg.ru/img/content/136/79/67/Depositphotos_35907759_m-2015_d_850.jpg") no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: azure;
+}
+/*NAv*/
+nav {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    padding: 2px;
+    background: url("https://st2.depositphotos.com/1033941/5450/i/600/depositphotos_54500347-stock-photo-night-starry-sky.jpg");
+    align-items: center;
+    z-index: 2;
+    opacity: .8;
+}
+.menu-big {
+    margin: 0 1% 0 0;
+}
+
+.header-links {
+    display: inline;
+    padding: 4px 20px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px white, 0 0 1em white;
+    transition-duration: 0.8s;
+}
+.header-links:hover {
+    transition-duration: 0.6s;
+    background-color: white;
+    box-shadow: 1px 1px 1px #00BFFF, 0 0 1em #00BFFF;
+}
+.header-links:hover a {
+    color: black;
+}
+.header-links:active {
+    background-color: aquamarine;
+}
+.header-links a {
+    color: white;
+    text-decoration: none;
+}
+#name {
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 10%;
+}
+#down {
+    position: absolute;
+    top: 510px;
+    left: 49%;
+}
+#down img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px white, 0 0 10px white;
+    transition-duration: 0.8s;
+}
+#down a {
+
+}
+#down:hover img {
+    transition-duration: 0.8s;
+    box-shadow: 0 0 1px #00BFFF, 0 0 15px #00BFFF;
+}
+/*content*/
+.content {
+    background-color: bisque;
+    width: 70%;
+    margin: 4% auto;
+    border-radius: 15px;
+    padding-bottom: 1%;
+    box-shadow: 5px 10px 25px -.5px rgba(0, 0, 0, .9);
+}
+/*About*/
+
+#about {
+    display: flex;
+    padding: 2% 8% 1% 10%;
+    align-items: center;
+}
+.text {
+    width: 50%;
+}
+.pics {
+    width: 50%;
+}
+.pics  img {
+    width: 300px;
+    box-shadow: 1px 2px 15px -.5px rgba(0, 0, 0, .6);
+}
+
+
+/*Portfolio*/
+#portfolio h2 {
+    text-align: center;
+}
+.portfolio {
+    display: flex;
+    width: 90%;
+    margin: 1% auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.project {
+    width: 40%;
+    display: block;
+    margin: 1% auto;
+    border: 1px solid gray;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: cornsilk;
+    box-shadow: 1px 2px 15px -.5px rgba(0, 0, 0, .6);
+}
+.project img {
+    width: 360px;
+    max-width: 85%;
+}
+/*buttons*/
+.butt {
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(#2708a1, #f720c9);
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .9);
+}
+.butt:hover {
+    background: linear-gradient(#db1507, #d8f520);
+}
+.butt:active {
+    background: white;
+    color: black;
+}
+/*Modal window*/
+.modal {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    transition: 0.3s all;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px 20px;
+    text-align: left;
+
+}
+.modal h1 {
+    text-align: center;
+}
+.modal .butt {
+    margin: 2% 40%;
+
+}
+.overlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+    /*Contacts*/
+
+#contacts {
+    width: 100%;
+    background: url("https://st2.depositphotos.com/1033941/5450/i/600/depositphotos_54500347-stock-photo-night-starry-sky.jpg");
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 1% 0;
+}
+.icon {
+    width: 50px;
+    border-radius: 50%;
+}
+/*.icon:hover {
+    box-shadow: 1px 2px 10px #00BFFF;
+}*/
+footer {
+    background: url("https://st2.depositphotos.com/1033941/5450/i/600/depositphotos_54500347-stock-photo-night-starry-sky.jpg");
+    color: white;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+    padding: 1% 0;
+}
+
+/*menu*/
+#menu-pic {
+    visibility: hidden;
+    width: 60px;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+}
+
+
+@media (max-width: 1070px) {
+    header {
+
+    }
+    #name {
+        margin-top: 20%;
+    }
+    .content {
+        width: 90%;
+    }
+    #about {
+        display: block;
+    }
+    #about .pics img {
+        width: 100%;
+
+    }
+    #about .pics {
+        width: 90%;
+        margin: 1% auto;
+    }
+    #about .text {
+        width: 100%;
+    }
+    .portfolio {
+        display: block;
+    }
+    .project {
+        width: 80%;
+        margin: 4% auto;
+    }
+    .project img {
+        width: 100%;
+    }
+    .butt {
+        font-size: 26px;
+    }
+    .modal {
+        width: 70%;
+        font-size: 40px;
+    }
+    nav {
+        background: none;
+        display: block;
+        position: fixed;
+    }
+    #menu {
+        visibility: hidden;
+
+    }
+    .header-links {
+        transition-duration: 0s;
+        font-size: 40px;
+        background: url("https://st2.depositphotos.com/1033941/5450/i/600/depositphotos_54500347-stock-photo-night-starry-sky.jpg");
+    }
+    #menu-pic {
+        visibility: visible;
+    }
+}
+@media (max-width: 850px) {
+    .content {
+        width: 95%;
+    }
+
+}
